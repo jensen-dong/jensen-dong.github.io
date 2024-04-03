@@ -28,6 +28,7 @@ header.append(logoA);
 header.append(boxMenu);
 header.append(navBar);
 
+//create A tags under navbar and append to navbar
 const homeA = document.createElement('a');
 const aboutA = document.createElement('a');
 const servicesA = document.createElement('a');
@@ -92,11 +93,17 @@ textLineFour.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing e
 const socialDiv = document.createElement('div');
 socialDiv.setAttribute('class', 'social-media');
 
+const resumeButton = document.createElement('a');
+resumeButton.textContent = 'Download Resume';
+resumeButton.href = '#';
+resumeButton.setAttribute('class', 'btn');
+
 homeContentDiv.append(textLineOne);
 homeContentDiv.append(textLineTwo);
 homeContentDiv.append(textLineThree);
 homeContentDiv.append(textLineFour);
 homeContentDiv.append(socialDiv);
+homeContentDiv.append(resumeButton);
 
 //create box menu a tags under social-media
 const facebookA = document.createElement('a');
