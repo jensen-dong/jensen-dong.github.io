@@ -6,6 +6,9 @@
 
 /*==================== scroll reveal ====================*/
 /*==================== typed js ====================*/
+
+//------------- header design ----------------
+
 const header = document.createElement('header');
 header.setAttribute('class', 'header');
 
@@ -52,3 +55,84 @@ navBar.append(portfolioA);
 navBar.append(contactA);
 
 document.querySelector('body').append(header);
+
+//------------ home section design ------------
+
+const homeSect = document.createElement('section');
+homeSect.setAttribute('class', 'home');
+homeSect.setAttribute('id', 'home');
+
+const homeContentDiv = document.createElement('div');
+homeContentDiv.setAttribute('class', 'home-content');
+
+const homeImgDiv = document.createElement('div');
+homeImgDiv.setAttribute('class', 'home-img');
+
+homeSect.append(homeContentDiv);
+homeSect.append(homeImgDiv);
+
+//create and append tags under home content
+const textLineOne = document.createElement('h3');
+textLineOne.textContent = "Hello, It's Me";
+
+const textLineTwo = document.createElement('h1');
+textLineTwo.textContent = 'Jensen Dong';
+
+const textLineThree = document.createElement('h3');
+textLineThree.textContent = "And I'm a ";
+
+//insert span tag into second h3 in home section
+const jobTitleSpan = document.createElement('span');
+jobTitleSpan.textContent = 'Frontend Engineer';
+textLineThree.appendChild(jobTitleSpan);
+
+const textLineFour = document.createElement('p');
+textLineFour.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque odit vitae eveniet consequuntur qui, accusamus minus!'
+
+const socialDiv = document.createElement('div');
+socialDiv.setAttribute('class', 'social-media');
+
+homeContentDiv.append(textLineOne);
+homeContentDiv.append(textLineTwo);
+homeContentDiv.append(textLineThree);
+homeContentDiv.append(textLineFour);
+homeContentDiv.append(socialDiv);
+
+//create box menu a tags under social-media
+const facebookA = document.createElement('a');
+facebookA.href = '#';
+const facebookBox = document.createElement('i');
+facebookBox.setAttribute('class', 'bx bxl-facebook');
+facebookA.append(facebookBox);
+
+const twitterA = document.createElement('a');
+twitterA.href = '#';
+const twitterBox = document.createElement('i');
+twitterBox.setAttribute('class', 'bx bxl-twitter');
+twitterA.append(twitterBox);
+
+const instagramA = document.createElement('a');
+instagramA.href = '#';
+const instagramBox = document.createElement('i');
+instagramBox.setAttribute('class', 'bx bxl-instagram');
+instagramA.append(instagramBox);
+
+const linkedinA = document.createElement('a');
+linkedinA.href = '#';
+const linkedinBox = document.createElement('i');
+linkedinBox.setAttribute('class', 'bx bxl-linkedin');
+linkedinA.append(linkedinBox);
+
+socialDiv.append(facebookA);
+socialDiv.append(twitterA);
+socialDiv.append(instagramA);
+socialDiv.append(linkedinA);
+
+//create profile img tag and append to home-img
+const profileImg = document.createElement('img');
+profileImg.src = './images/personal-portfolio-pic.png';
+profileImg.alt = '';
+homeImgDiv.append(profileImg);
+
+//append section home to body
+document.querySelector('body').append(homeSect);
