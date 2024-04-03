@@ -24,9 +24,7 @@ boxMenu.setAttribute('id', 'menu-icon');
 const navBar = document.createElement('nav');
 navBar.setAttribute('class', 'navbar');
 
-header.append(logoA);
-header.append(boxMenu);
-header.append(navBar);
+header.append(logoA, boxMenu, navBar);
 
 //create A tags under navbar and append to navbar
 const homeA = document.createElement('a');
@@ -49,11 +47,7 @@ servicesA.textContent = 'Services';
 portfolioA.textContent = 'Portfolio';
 contactA.textContent = 'Contact';
 
-navBar.append(homeA);
-navBar.append(aboutA);
-navBar.append(servicesA);
-navBar.append(portfolioA);
-navBar.append(contactA);
+navBar.append(homeA, aboutA, servicesA, portfolioA, contactA);
 
 document.querySelector('body').append(header);
 
@@ -69,8 +63,7 @@ homeContentDiv.setAttribute('class', 'home-content');
 const homeImgDiv = document.createElement('div');
 homeImgDiv.setAttribute('class', 'home-img');
 
-homeSect.append(homeContentDiv);
-homeSect.append(homeImgDiv);
+homeSect.append(homeContentDiv, homeImgDiv);
 
 //create and append tags under home content
 const textLineOne = document.createElement('h3');
@@ -98,12 +91,7 @@ resumeButton.textContent = 'Download Resume';
 resumeButton.href = '#';
 resumeButton.setAttribute('class', 'btn');
 
-homeContentDiv.append(textLineOne);
-homeContentDiv.append(textLineTwo);
-homeContentDiv.append(textLineThree);
-homeContentDiv.append(textLineFour);
-homeContentDiv.append(socialDiv);
-homeContentDiv.append(resumeButton);
+homeContentDiv.append(textLineOne, textLineTwo, textLineThree, textLineFour, socialDiv, resumeButton);
 
 //create box menu a tags under social-media
 const facebookA = document.createElement('a');
@@ -130,10 +118,7 @@ const linkedinBox = document.createElement('i');
 linkedinBox.setAttribute('class', 'bx bxl-linkedin');
 linkedinA.append(linkedinBox);
 
-socialDiv.append(facebookA);
-socialDiv.append(twitterA);
-socialDiv.append(instagramA);
-socialDiv.append(linkedinA);
+socialDiv.append(facebookA, twitterA, instagramA, linkedinA);
 
 //create profile img tag and append to home-img
 const profileImg = document.createElement('img');
