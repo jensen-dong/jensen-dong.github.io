@@ -12,10 +12,10 @@
 }
 
 :root {
-  --bg-color: #1f242d;
-  --second-bg-color: #323946;
+  --bg-color: #000000;
+  --second-bg-color: #14213D;
   --text-color: #fff;
-  --main-color: #0ef;
+  --main-color: #FCA311;
 }
 
 html {
@@ -258,6 +258,7 @@ body {
 }
 
 .portfolio h2 {
+  padding-top: 2rem;
   margin-bottom: 4rem;
 }
 
