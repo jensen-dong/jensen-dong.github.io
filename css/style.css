@@ -333,13 +333,13 @@ body {
   color: var(--second-bg-color);
 }
 
-#portfolio-1 {
+/* #portfolio-1 {
   height: 21vw;
 }
 
 #portfolio-2 {
   height: 21.15vw;
-}
+} */
 
 .contact h2 {
   margin-bottom: 3rem;
